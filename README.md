@@ -94,6 +94,23 @@ https://developer.nvidia.com/blog/gpu-pro-tip-cuda-7-streams-simplify-concurrenc
 ##### Async and Sync Operations
 https://docs.nvidia.com/cuda/cuda-runtime-api/api-sync-behavior.html
 https://www.cs.emory.edu/~cheung/Courses/355/Syllabus/94-CUDA/SLIDES/s06.html
+
 ![image](https://github.com/yinanericxue/GPU-CUDA/assets/102645083/84895566-1f46-4871-baf3-68af955e5f03)
 ![image](https://github.com/yinanericxue/GPU-CUDA/assets/102645083/c78cd301-8b7a-449c-8b93-cc702208a423)
 
+### Full Software Stack
+
+https://www.tensorflow.org/install/gpu
+https://pytorch.org/get-started/locally/
+
+#### Python apps / PyTorch or TensorFlow / cuDNN / CUDA Runtime / CUDA Driver / GPU Driver
+
+#### cuda toolkits include cuda runtime, nvcc, example code (helloworld)
+
+<img width="320" alt="image" src="https://github.com/yinanericxue/GPU-CUDA/assets/102645083/92637a40-cc4e-4843-93f5-9d3fa9c18df9">
+
+### cuDNN
+#### https://developer.nvidia.com/cudnn
+#### https://blog.roboflow.com/what-is-cudnn/
+#### https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html
+![image](https://github.com/yinanericxue/GPU-CUDA/assets/102645083/d79d91c2-f9a7-4f2c-82b9-767f293312c4)
