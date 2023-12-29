@@ -46,6 +46,54 @@ https://en.wikipedia.org/wiki/List_of_OpenGL_applications
 
 ### CUDA Programming
 #### https://developer.nvidia.com/blog/easy-introduction-cuda-c-and-c/
+![image](https://github.com/yinanericxue/GPU-CUDA/assets/102645083/46987d9e-d0b1-446f-9bc3-5d7f7952467e)
+#### http://w-uh.com/posts/230122-CUDA_coding.html
+<img width="404" alt="Screen Shot 2023-12-28 at 4 54 29 PM" src="https://github.com/yinanericxue/GPU-CUDA/assets/102645083/a0abc513-01f0-4a61-ab02-3e38ee87fe35">
+<img width="400" alt="image" src="https://github.com/yinanericxue/GPU-CUDA/assets/102645083/1a664550-3ca0-4d4a-b2f7-db093091ef81">
 
+### NVCC (CUDA Toolkit)
+![image](https://github.com/yinanericxue/GPU-CUDA/assets/102645083/c4681f77-1374-4462-a476-38107e8f3c16)
 
+### CPU Process Context: Linux and Web/Parallel Programming
+#### https://www.baeldung.com/cs/os-cpu-context-switch
+#### https://www.geeksforgeeks.org/context-switch-in-operating-system/
+#### Multiple Processes share the same CPU.
+![image](https://github.com/yinanericxue/GPU-CUDA/assets/102645083/33418023-e3ac-4f60-8285-c2aadd79b7d0)
+
+### GPU CUDA Context and its VRAM usage
+#### https://www.tutorialspoint.com/is-it-possible-to-share-a-cuda-context-between-applications
+#### https://stackoverflow.com/questions/43244645/what-is-a-cuda-context
+#### https://docs.nvidia.com/deploy/mps/index.html
+#### Multiple Processes share the same GPU.
+![image](https://github.com/yinanericxue/GPU-CUDA/assets/102645083/2ea5f21e-fd19-4165-b617-368f90cbd7d6)
+![image](https://github.com/yinanericxue/GPU-CUDA/assets/102645083/47866405-7c59-498a-9602-d636fa62fdd6)
+
+### Lazy initialization of CUDA context
+#### https://stackoverflow.com/questions/7534892/cuda-context-creation-and-resource-association-in-runtime-api-applications![image](https://github.com/yinanericxue/GPU-CUDA/assets/102645083/c54c0a51-fb45-4417-a703-ee37586ccb5b)
+![image](https://github.com/yinanericxue/GPU-CUDA/assets/102645083/a966d3f4-fb50-4cbe-87b1-86ecd1cbb64c)
+
+### VRAM usage of CUDA Context
+#### https://discuss.pytorch.org/t/what-is-the-initial-1-3gb-allocated-vram-when-first-using-cuda/122079
+![image](https://github.com/yinanericxue/GPU-CUDA/assets/102645083/af0b947a-073d-4265-b950-595d6a80d029)
+
+#### Actual GPU memory is 1.3/4 GB, and the extra memory are used by CUDA context (similar to traditional process stack pointer)
+![image](https://github.com/yinanericxue/GPU-CUDA/assets/102645083/192017c1-7e2c-4707-a1a5-7561dd2bb08f)
+![image](https://github.com/yinanericxue/GPU-CUDA/assets/102645083/a6e4ec42-7826-4ba9-bf90-e1f27de675b7)
+
+### Basic PyTorch model, involving moving information to GPU
+<img width="680" alt="Screen Shot 2023-12-28 at 5 51 53 PM" src="https://github.com/yinanericxue/GPU-CUDA/assets/102645083/83161edc-a35d-4936-b3f2-ffd13478f9f4">
+
+### Basic linear model with Torch computed with GPU
+<img width="612" alt="Screen Shot 2023-12-28 at 5 53 00 PM" src="https://github.com/yinanericxue/GPU-CUDA/assets/102645083/a818337b-4a06-4b8d-95ff-ff095cb84a31">
+
+### CUDA Stream
+https://leimao.github.io/blog/CUDA-Stream/#CUDA%20Stream
+https://developer.nvidia.com/blog/gpu-pro-tip-cuda-7-streams-simplify-concurrency/
+![image](https://github.com/yinanericxue/GPU-CUDA/assets/102645083/46c1580f-d02b-49c9-907b-ee0484e4e1b7)
+
+##### Async and Sync Operations
+https://docs.nvidia.com/cuda/cuda-runtime-api/api-sync-behavior.html
+https://www.cs.emory.edu/~cheung/Courses/355/Syllabus/94-CUDA/SLIDES/s06.html
+![image](https://github.com/yinanericxue/GPU-CUDA/assets/102645083/84895566-1f46-4871-baf3-68af955e5f03)
+![image](https://github.com/yinanericxue/GPU-CUDA/assets/102645083/c78cd301-8b7a-449c-8b93-cc702208a423)
 
