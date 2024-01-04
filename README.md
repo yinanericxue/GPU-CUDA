@@ -114,3 +114,68 @@ https://pytorch.org/get-started/locally/
 #### https://blog.roboflow.com/what-is-cudnn/
 #### https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html
 ![image](https://github.com/yinanericxue/GPU-CUDA/assets/102645083/d79d91c2-f9a7-4f2c-82b9-767f293312c4)
+
+
+### CUDA Runtine vs CUDA Driver
+#### https://leimao.github.io/blog/CUDA-Driver-VS-CUDA-Runtime/
+#### https://docs.nvidia.com/cuda/cuda-runtime-api/driver-vs-runtime-api.html
+
+#### First step, install CUDA using CUDA Toolkit.
+#### https://developer.nvidia.com/cuda-downloads?target_os=Linux
+
+#### The full stack follows a backward compatibility, lower level are newer and can support older upper level.
+
+#### My code: 1.0
+#### PyTorch code: 2.1.0
+#### Python: 3.10
+#### torch.version.cuda: 11.8
+#### These must be installed specifically for each container image.
+
+![image](https://github.com/yinanericxue/GPU-CUDA/assets/102645083/a51ae580-62c2-43fa-9a6f-de7235061bcb)
+
+![image](https://github.com/yinanericxue/GPU-CUDA/assets/102645083/3effd6d2-4f8a-4cdc-a389-13f6251ea6a9)
+
+### CUDA Compatibility
+#### https://docs.nvidia.com/deploy/cuda-compatibility/
+
+![image](https://github.com/yinanericxue/GPU-CUDA/assets/102645083/b46d3703-e244-4a10-8c03-e41c91036685)
+
+![image](https://github.com/yinanericxue/GPU-CUDA/assets/102645083/09a53f31-5df7-4623-8f74-39040d7c406d)
+
+### Container with GPU support
+
+### Linux Device File
+#### https://docs.oracle.com/en/operating-systems/oracle-linux/6/admin/ol_about_devices.html
+
+#### https://en.wikipedia.org/wiki/Device_file
+
+![image](https://github.com/yinanericxue/GPU-CUDA/assets/102645083/8a899fdd-a4d3-481b-881b-e4a349d1e6d4)
+
+### Access the host device inside the container
+#### https://docs.docker.com/engine/reference/commandline/run/#device
+![image](https://github.com/yinanericxue/GPU-CUDA/assets/102645083/f3e8dccb-da14-45ea-a6f2-28246b1e88b4)
+
+### How a container accesses the GPU in the Host
+#### https://stackoverflow.com/questions/25185405/using-gpu-from-a-docker-container
+![image](https://github.com/yinanericxue/GPU-CUDA/assets/102645083/285473cd-e9cb-41c0-9a78-10c2b876bcef)
+
+### NVIDIA Container Toolkit (formerly known as Nvidia-Docker2)
+#### https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/sample-workload.html
+#### https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/arch-overview.html
+![image](https://github.com/yinanericxue/GPU-CUDA/assets/102645083/9bbb6dfb-552b-4f5b-88dd-d4392152d07a)
+
+#### Example 1:
+#### docker run --rm --gpus all ubuntu nvidia-smi
+
+#### Example 2:
+#### docker run --gpus all tensorflow/tensorflow:latest-gpu
+
+#### https://docs.docker.com/engine/reference/commandline/run/#gpus
+![image](https://github.com/yinanericxue/GPU-CUDA/assets/102645083/3db943f5-ac32-48c2-89b3-a8b490e80f74)
+
+![image](https://github.com/yinanericxue/GPU-CUDA/assets/102645083/badd3fea-2a11-42d6-8670-c51595e8d11c)
+
+![image](https://github.com/yinanericxue/GPU-CUDA/assets/102645083/e9c17961-dd32-4870-ab55-715c215c0e78)
+
+
+
